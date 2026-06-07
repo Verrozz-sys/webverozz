@@ -15,26 +15,76 @@ body{background:#0b1120;color:#fff}
 .hero h1{font-size:3.2rem;line-height:1;margin:15px 0;font-weight:700}
 .hero p{color:#94a3b8;max-width:500px;margin:15px auto;line-height:1.7}
 .hero-buttons{margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn{background:#2563eb;color:#fff;text-decoration:none;padding:12px 22px;border-radius:10px;font-weight:600;transition:.3s}
-.btn:hover{transform:translateY(-2px)}
+.btn{background:#2563eb;color:#fff;text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:600}
 .telegram{background:#0891b2}
 .container{max-width:900px;margin:auto;padding:15px}
-.about,.contact{background:#111827;padding:25px;border-radius:12px;margin:20px 0}
-.category{background:#1e293b;padding:20px;border-radius:12px;margin:15px 0;cursor:pointer;font-weight:600;transition:.3s}
-.category:hover{box-shadow:0 0 20px rgba(37,99,235,.25)}
-.content{display:none;background:#111827;padding:15px;border-radius:12px}
-.product{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:#1e293b;padding:12px;border-radius:10px;margin:8px 0}
+.about,.contact,.content{background:#111827;padding:20px;border-radius:12px;margin:15px 0}
+.category{background:#1e293b;padding:18px;border-radius:12px;margin:15px 0;cursor:pointer;font-weight:600}
+.product{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:#1e293b;padding:12px 15px;border-radius:10px;margin:8px 0}
 footer{text-align:center;padding:20px;color:#94a3b8}
-@media(max-width:768px){
-.hero h1{font-size:3rem}
-.btn{width:140px;text-align:center}
-}
+@media(max-width:768px){.hero h1{font-size:3rem}.btn{width:120px;text-align:center}}
 </style>
 </head>
 <body>
 <section class="hero">
 <div class="badge">⚡ Trusted Digital Store</div>
 <h1>VERROZZHOST</h1>
+<p>Premium Apps, Panel Pterodactyl, dan layanan digital dengan proses cepat serta harga terjangkau.</p>
+<div class="hero-buttons">
+<a class="btn" href="https://wa.me/6285791277879">WhatsApp</a>
+<a class="btn telegram" href="https://t.me/Verrozz">Telegram</a>
+</div>
+</section>
+
+<div class="container">
+<div class="about">
+<h2>Tentang Kami</h2>
+<p>VerrozzHost menyediakan Premium Apps dan Panel Pterodactyl dengan proses cepat, support responsif, dan harga bersahabat.</p>
+</div>
+
+<div class="category" onclick="toggleMenu('apps')">📦 Premium Apps</div>
+<div class="content" id="apps">
+<div class="product"><span>ChatGPT Plus</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>Spotify Premium</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>Netflix Premium</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>Canva Pro</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>YouTube Premium</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>CapCut Pro</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>Alight Motion Premium</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+</div>
+
+<div class="category" onclick="toggleMenu('panel')">🌐 Panel Pterodactyl</div>
+<div class="content" id="panel">
+<div class="product"><span>1 GB - Rp2.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>2 GB - Rp3.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>3 GB - Rp4.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>4 GB - Rp5.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>5 GB - Rp6.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>6 GB - Rp7.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>7 GB - Rp8.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>8 GB - Rp9.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>9 GB - Rp10.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>10 GB - Rp11.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+<div class="product"><span>Unlimited - Rp14.000</span><a class="btn" href="https://wa.me/6285791277879">Pesan</a></div>
+</div>
+
+<div class="contact">
+<h2>Kontak</h2>
+<p>WhatsApp: 085791277879</p>
+<p>Telegram: @Verrozz</p>
+</div>
+</div>
+
+<footer>© 2026 VerrozzHost</footer>
+
+<script>
+function toggleMenu(id){
+const el=document.getElementById(id);
+el.style.display=el.style.display==="block"?"none":"block";
+}
+</script>
+</body>
+</html><h1>VERROZZHOST</h1>
 <p>Premium Apps, Panel Pterodactyl, dan layanan digital dengan proses cepat serta harga terjangkau.</p>
 <div class="hero-buttons">
 <a class="btn" href="https://wa.me/6285791277879">WhatsApp</a>
